@@ -75,6 +75,7 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.2)
     base64 (0.2.0)
+    bcrypt (3.1.20)
     bigdecimal (3.1.8)
     bindex (0.8.1)
     bootsnap (1.18.4)
@@ -105,22 +106,22 @@ GEM
     erubi (1.13.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    google-protobuf (4.28.0)
+    google-protobuf (4.28.2)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.28.0-aarch64-linux)
+    google-protobuf (4.28.2-aarch64-linux)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.28.0-arm64-darwin)
+    google-protobuf (4.28.2-arm64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.28.0-x86-linux)
+    google-protobuf (4.28.2-x86-linux)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.28.0-x86_64-darwin)
+    google-protobuf (4.28.2-x86_64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.28.0-x86_64-linux)
+    google-protobuf (4.28.2-x86_64-linux)
       bigdecimal
       rake (>= 13)
     i18n (1.14.5)
@@ -260,25 +261,25 @@ GEM
       rubocop-rails
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
-    sass-embedded (1.78.0-aarch64-linux-gnu)
+    sass-embedded (1.79.4-aarch64-linux-gnu)
       google-protobuf (~> 4.27)
-    sass-embedded (1.78.0-aarch64-linux-musl)
+    sass-embedded (1.79.4-aarch64-linux-musl)
       google-protobuf (~> 4.27)
-    sass-embedded (1.78.0-arm-linux-gnueabihf)
+    sass-embedded (1.79.4-arm-linux-gnueabihf)
       google-protobuf (~> 4.27)
-    sass-embedded (1.78.0-arm-linux-musleabihf)
+    sass-embedded (1.79.4-arm-linux-musleabihf)
       google-protobuf (~> 4.27)
-    sass-embedded (1.78.0-arm64-darwin)
+    sass-embedded (1.79.4-arm64-darwin)
       google-protobuf (~> 4.27)
-    sass-embedded (1.78.0-x86-linux-gnu)
+    sass-embedded (1.79.4-x86-linux-gnu)
       google-protobuf (~> 4.27)
-    sass-embedded (1.78.0-x86-linux-musl)
+    sass-embedded (1.79.4-x86-linux-musl)
       google-protobuf (~> 4.27)
-    sass-embedded (1.78.0-x86_64-darwin)
+    sass-embedded (1.79.4-x86_64-darwin)
       google-protobuf (~> 4.27)
-    sass-embedded (1.78.0-x86_64-linux-gnu)
+    sass-embedded (1.79.4-x86_64-linux-gnu)
       google-protobuf (~> 4.27)
-    sass-embedded (1.78.0-x86_64-linux-musl)
+    sass-embedded (1.79.4-x86_64-linux-musl)
       google-protobuf (~> 4.27)
     securerandom (0.3.1)
     selenium-webdriver (4.24.0)
@@ -338,6 +339,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap
   brakeman
   capybara
