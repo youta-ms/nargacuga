@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :require_user except: [:new, :create]
+  before_action :require_same_user except: [:edit, :update, :destroy]
+
   def index
     @users = User.all
   end
@@ -43,5 +47,12 @@ class UsersController < ApplicationController
 
       def user_params
         params.require(:user).permit(:name, :email, :password, :password_confirmation)
+      end
+
+      def require_same_user
+        if current_user != @user
+          flash[:alert] = "許可されていない操作です。プロフィールの編集、削除は作成者ご自身のみ可能です。"
+          redirect_to @user
+        end
       end
 end
