@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "navigation" %>
+
+<div class="nav-container">
+  <nav class="nav-menu">
+    <div class="nav-button-group top">
+      <%= link_to "Home", root_path %>
+    </div>
+    <ul class="nav-button-group menu">
+      <li class="nav-button">
+        <%= link_to "Sample", root_path %>
+      </li>
+    </ul>
+    <div class="nav-button-group session">
+      <%= link_to "Login", login_path %>
+    </div>
+  </nav>
+</div>

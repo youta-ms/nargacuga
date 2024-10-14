@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
+  root "top#show"
   get "sessions/new"
-  # root "home#index"
-  # get "about", to: "home#about"
 
   # ユーザー用のルート設定
   get "signup", to: "users#new"
